@@ -19,7 +19,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
-- [Solution on Frontend Mentor]()
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/scss-single-price-grid-component-9aPh5NUoGe)
 - [Live site](https://dudeldups.github.io/FM-single-price-grid-component/)
 
 ## My process
