@@ -21,6 +21,7 @@ body {
   max-width: 21.875rem;
   background: white;
   border-radius: 6px;
+  box-shadow: 0 0.75rem 1rem 0.1rem rgba(black, 0.1);
 
   @media only screen and (min-width: 43.75em) {
     max-width: 39.6875rem;
