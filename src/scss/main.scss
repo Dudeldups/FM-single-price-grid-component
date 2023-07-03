@@ -1,0 +1,116 @@
+@use "resets";
+@use "colors";
+
+$card-padding: clamp(2rem, -2.3rem + 17.06vw, 2.5rem)
+  clamp(1.35rem, -4.4rem + 24.53vw, 2.5rem);
+
+body {
+  display: grid;
+  place-content: start center;
+  padding: 2rem clamp(1rem, -4.82rem + 29.1vw, 2rem);
+  background: colors.$gray;
+  font: 400 1rem "Karla", sans-serif;
+
+  @media only screen and (min-width: 43.75em) {
+    place-content: center;
+  }
+}
+
+.card {
+  overflow: hidden;
+  max-width: 21.875rem;
+  background: white;
+  border-radius: 6px;
+
+  @media only screen and (min-width: 43.75em) {
+    max-width: 39.6875rem;
+  }
+}
+
+.top {
+  padding: $card-padding;
+
+  &__title {
+    font-size: clamp(1.25rem, 0rem + 5.3vw, 1.5rem);
+    font-weight: 700;
+    color: colors.$cyan;
+  }
+
+  &__subtitle {
+    margin-top: 1.5rem;
+    font-size: clamp(1rem, 0.5rem + 2.13vw, 1.1rem);
+    font-weight: 700;
+    color: colors.$yellow;
+  }
+
+  &__description {
+    margin-top: 0.75rem;
+    font-size: clamp(0.85rem, 0.1rem + 3.2vw, 1rem);
+    color: colors.$gray-blue;
+    line-height: 1.7;
+  }
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  color: white;
+}
+
+.subscription {
+  padding: $card-padding;
+  background: colors.$cyan;
+
+  &__title {
+    font-size: 1.1rem;
+  }
+
+  &__price {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+
+    & > span {
+      margin-left: 0.85rem;
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: colors.$gray;
+    }
+  }
+
+  &__description {
+    margin-top: 0.5rem;
+  }
+
+  &__button {
+    margin-top: 1.75rem;
+    padding: 0.85em;
+    width: 100%;
+    background: colors.$yellow;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 0.4rem 0.75rem 0.25rem rgba(black, 0.1);
+  }
+}
+
+.why-us {
+  padding: $card-padding;
+  background: rgba(colors.$cyan, 0.8);
+
+  &__title {
+    font-size: 1.1rem;
+  }
+
+  &__list {
+    margin-top: 1rem;
+    list-style-type: none;
+    font-size: 0.9rem;
+    color: colors.$gray;
+
+    & > li:not(:last-child) {
+      margin-bottom: 0.25em;
+    }
+  }
+}
